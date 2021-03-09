@@ -1,4 +1,5 @@
 const path = require('path');
+const hetmlWebPackPlugin = require('html-webpack-plugin');
 
 module.exports = {
   mode: 'development', // production
@@ -10,6 +11,11 @@ module.exports = {
   resolve: {
     extensions: ['.js', '.jsx'],
   },
+  plugins: [
+    new hetmlWebPackPlugin({
+      template: path.resolve(__dirname, 'public', 'index.html'),
+    }),
+  ],
   module: {
     rules: [
       {
