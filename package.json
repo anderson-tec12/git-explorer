@@ -1,0 +1,12 @@
+{
+  "name": "git-explorer",
+  "version": "1.0.0",
+  "main": "index.js",
+  "repository": "git@github.com:anderson-tec12/git-explorer.git",
+  "author": "Anderson Barros Silva <anderson.tec12@gmail.com>",
+  "license": "MIT",
+  "dependencies": {
+    "git-commit-msg-linter": "^3.0.0",
+    "react": "^17.0.1"
+  }
+}
