@@ -3,6 +3,7 @@ const hetmlWebPackPlugin = require('html-webpack-plugin');
 
 module.exports = {
   mode: 'development', // production
+  devtool: 'eval-source-map',
   entry: path.resolve(__dirname, 'src', 'index.jsx'),
   output: {
     path: path.resolve(__dirname, 'dist'),
