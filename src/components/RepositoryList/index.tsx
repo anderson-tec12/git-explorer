@@ -3,8 +3,14 @@ import RepositoryItem from "../RepositoryItem"
 import '../../styles/repositories.scss'
 import api from '../../services/api'
 
+export interface Irpository{
+  name:string,
+  description:string,
+  html_url:string
+}
+
 const RepositoryList = () => {
-  const [repositories,setRepositories] = useState([])
+  const [repositories,setRepositories] = useState<Irpository[]>([])
 
   useEffect(() => {
     api.get('orgs/rocketseat/repos').then(resp => {
