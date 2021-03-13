@@ -5,7 +5,7 @@ const RepositoryItem = ({repository}) => {
           <strong>{repository.name }</strong>
           <p>{repository.description}</p>
 
-          <a href={repository.link}>
+          <a href={repository.html_url}>
             Acessar repositorio
           </a>
     </li>

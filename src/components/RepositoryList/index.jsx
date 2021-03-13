@@ -15,27 +15,11 @@ const RepositoryList = () => {
     <section className="repository-list">
       <h1>Lista de Repositorios</h1>
       <ul>
-        <RepositoryItem repository={
-            {
-              name:'Unform',
-              description:'Forms in React',
-              link:'https://github.com',
-            }
-          } />
-        <RepositoryItem repository={
-            {
-              name:'Unform',
-              description:'Forms in React',
-              link:'https://github.com',
-            }
-          } />
-        <RepositoryItem repository={
-            {
-              name:'Unform',
-              description:'Forms in React',
-              link:'https://github.com',
-            }
-          } />
+        {
+          repositories.map(repository => (
+            <RepositoryItem key={repository.name} repository={repository} />
+          ))
+        }
       </ul>
     </section>
   )
